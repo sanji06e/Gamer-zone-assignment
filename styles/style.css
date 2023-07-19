@@ -5,6 +5,10 @@
   font-family: "Lato", sans-serif;
   font-family: "Work Sans", sans-serif;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 /* nav related styles */
 .nav-container {
   display: flex;
@@ -94,6 +98,7 @@ img {
   text-transform: lowercase;
   margin-top: 24px;
   line-height: 2rem;
+  padding-left: 10px;
 }
 .banner-btn {
   border-radius: 48px;
@@ -105,10 +110,10 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-left: 20px;
 }
 #color-change {
   background: #4ec5f7;
+  margin-left: 20px;
 }
 .banner-img-container img {
   width: 80%;
@@ -118,17 +123,97 @@ img {
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
-    padding: 80px 0px;
+    padding: 60px 0px;
   }
   .nav-elements {
     flex-direction: column;
     padding: 0px;
   }
   .nav-title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .follow-us {
     margin-top: 30px;
   }
+  img {
+    width: 60px;
+  }
+  .pixel {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff42a5;
+  }
+  .quest {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0b0223;
+  }
+  .follow-us {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.1);
+    padding: 10px 15px;
+  }
+  /* for banner section */
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-img-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .banner-text-container {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .banner-texts {
+    padding: 0px;
+  }
+  .banner-text {
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .banner-title {
+    font-size: 4rem;
+    margin: 10px;
+  }
+  .banner-description {
+    font-size: 1rem;
+    margin: 5px;
+    line-height: 1.5rem;
+  }
+  .banner-btn {
+    font-size: 1rem;
+    margin-top: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
 }
 /* Styles for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 25px 100px;
+  }
+  /* for banner section */
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+  .banner-img-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .banner-text-container {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .banner-texts {
+    padding: 100px;
+  }
+  .banner-btn {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 15px 20px;
+  }
+}
