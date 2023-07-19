@@ -258,6 +258,26 @@ img {
     padding: 10px 20px;
     margin-left: 10px;
   }
+  /* funny video section */
+  .funny-videos-container {
+    padding: 50px 50px;
+  }
+  .online-games {
+    font-size: 2rem;
+  }
+  .funny-videos {
+    font-size: 2rem;
+  }
+  .videos-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 0px 30px;
+  }
+  .video-images img {
+  }
+  .video-title {
+    font-size: 1rem;
+  }
 }
 /* Styles for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -285,5 +305,26 @@ img {
     font-size: 1rem;
     margin-top: 10px;
     padding: 15px 20px;
+  }
+  /* funny video section */
+  .funny-videos-container {
+    padding: 50px 50px;
+  }
+  .online-games {
+    font-size: 2rem;
+  }
+  .funny-videos {
+    font-size: 2rem;
+  }
+  .videos-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 30px;
+  }
+  .video-images img {
+  }
+  .video-title {
+    font-size: 1rem;
   }
 }
