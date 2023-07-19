@@ -302,10 +302,11 @@ img {
 }
 .footer-container {
   background: #0b0223;
-  padding: 100px 400px;
+  padding: 100px 300px;
 }
 .snippets {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 40px;
   color: #fff;
   text-align: center;
@@ -315,14 +316,17 @@ img {
 .icons {
   text-align: center;
   margin: 50px;
-  font-size: 48px;
-  /* color: white; */
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .policies {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   display: flex;
   gap: 45px;
+  justify-content: center;
 }
 .copyright {
   color: rgba(255, 255, 255, 0.6);
@@ -464,6 +468,41 @@ img {
   .button-img {
     width: 35px;
   }
+  /* footer for mobile */
+  .footer-container {
+    padding: 50px 50px;
+  }
+  .footer-title {
+  }
+  .quest2,
+  .pixel2 {
+    font-size: 2rem;
+  }
+  .snippets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 1.5rem;
+    margin: 30px;
+  }
+  .policies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    margin-top: 30px;
+  }
 }
 /* Styles for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -553,5 +592,20 @@ img {
   }
   .button-img {
     width: 35px;
+  }
+  /* footer seciton */
+  .snippets {
+    gap: 20px;
+    font-size: 1rem;
+  }
+  .icons {
+    font-size: 2rem;
+  }
+  .footer-container {
+    padding: 50px 100px;
+  }
+  .policies,
+  .copyright {
+    font-size: 0.8rem;
   }
 }
