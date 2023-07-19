@@ -50,7 +50,7 @@ img {
 .follow-us {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
-  padding: 15px 22px;
+  padding: 15px 20px;
 }
 /* styles for banner section */
 .banner-container {
@@ -113,3 +113,22 @@ img {
 .banner-img-container img {
   width: 80%;
 }
+
+/* styles for mobile devices */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 80px 0px;
+  }
+  .nav-elements {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .nav-title {
+    margin-bottom: 40px;
+  }
+  .follow-us {
+    margin-top: 30px;
+  }
+}
+/* Styles for tablet */
