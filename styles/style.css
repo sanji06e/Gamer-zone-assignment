@@ -268,11 +268,13 @@ img {
     rgba(255, 66, 165, 0.03) 0%,
     rgba(255, 66, 165, 0.03) 100%
   );
-  padding: 100px 130px;
+  padding: 100px 150px;
 }
 .grid1 {
-  display: grid;
-  grid-template-columns: 1fr repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 1fr repeat(4, 1fr); */
   gap: 40px;
   margin-bottom: 25px;
   justify-content: center;
@@ -287,6 +289,7 @@ img {
   background: #fff;
   align-items: center;
   padding: 10px 10px;
+  border: none;
 }
 .button-img {
   width: 50px;
@@ -342,6 +345,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 30px;
+  cursor: pointer;
 }
 .policies {
   color: rgba(255, 255, 255, 0.6);
@@ -478,6 +482,7 @@ img {
   }
   /* button section */
   .grid1 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -488,13 +493,14 @@ img {
     font-size: 0.6rem;
   }
   .button-img {
-    width: 35px;
+    width: 30px;
+  }
+  .buttons {
+    padding: 5px;
   }
   /* footer for mobile */
   .footer-container {
     padding: 50px 50px;
-  }
-  .footer-title {
   }
   .quest2,
   .pixel2 {
@@ -603,7 +609,6 @@ img {
   }
   /* button section */
   .grid1 {
-    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
   .button-container {
@@ -615,7 +620,7 @@ img {
   .button-img {
     width: 35px;
   }
-  /* footer seciton */
+  /* footer secition */
   .snippets {
     gap: 20px;
     font-size: 1rem;
